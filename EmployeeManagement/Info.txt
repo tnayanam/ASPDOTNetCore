@@ -1,0 +1,5 @@
+==============
+ New Features
+==============
+1. If we add a file by going to folder of the project, it automatically gets included/excluded from the solution explorer, no need to use
+"include in project" option.
