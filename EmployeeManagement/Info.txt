@@ -21,6 +21,7 @@ is getting used then w3wp.exe will kick in.
 With InProcess hosting, we have just one server but in out of process hosting we have multiple servers, so firstly request goes to internal server (Kestrel) and then it goes to external web server.
 Kestrel - Cross platform web server for ASp.Net core. Kestrel is provided by default by in ASP.Net core application, but since we run our applcaiiton from Visual Studio, we can see the process as IIS express (which is proveided by VS),
 but if we run the application directly from CLI we will see the output as 'dotnet' (this is the hosting exe provided by kestrel).
+With out of process web hosting we have 2 servers internal as well as external servers. internal server will be Kestreal and external web server will be IIS or apache or Nginx.
 
 
-   
+
