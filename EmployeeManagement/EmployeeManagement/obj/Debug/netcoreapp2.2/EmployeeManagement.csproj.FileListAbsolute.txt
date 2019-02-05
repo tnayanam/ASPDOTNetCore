@@ -1,0 +1,14 @@
+C:\Users\tnayanam\Desktop\Demo\ASP.NetCore\EmployeeManagement\EmployeeManagement\bin\Debug\netcoreapp2.2\EmployeeManagement.deps.json
+C:\Users\tnayanam\Desktop\Demo\ASP.NetCore\EmployeeManagement\EmployeeManagement\bin\Debug\netcoreapp2.2\EmployeeManagement.runtimeconfig.json
+C:\Users\tnayanam\Desktop\Demo\ASP.NetCore\EmployeeManagement\EmployeeManagement\bin\Debug\netcoreapp2.2\EmployeeManagement.runtimeconfig.dev.json
+C:\Users\tnayanam\Desktop\Demo\ASP.NetCore\EmployeeManagement\EmployeeManagement\bin\Debug\netcoreapp2.2\EmployeeManagement.dll
+C:\Users\tnayanam\Desktop\Demo\ASP.NetCore\EmployeeManagement\EmployeeManagement\bin\Debug\netcoreapp2.2\EmployeeManagement.pdb
+C:\Users\tnayanam\Desktop\Demo\ASP.NetCore\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\EmployeeManagement.csprojAssemblyReference.cache
+C:\Users\tnayanam\Desktop\Demo\ASP.NetCore\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\EmployeeManagement.csproj.CoreCompileInputs.cache
+C:\Users\tnayanam\Desktop\Demo\ASP.NetCore\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\EmployeeManagement.RazorAssemblyInfo.cache
+C:\Users\tnayanam\Desktop\Demo\ASP.NetCore\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\EmployeeManagement.RazorAssemblyInfo.cs
+C:\Users\tnayanam\Desktop\Demo\ASP.NetCore\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\EmployeeManagement.AssemblyInfoInputs.cache
+C:\Users\tnayanam\Desktop\Demo\ASP.NetCore\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\EmployeeManagement.AssemblyInfo.cs
+C:\Users\tnayanam\Desktop\Demo\ASP.NetCore\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\EmployeeManagement.RazorTargetAssemblyInfo.cache
+C:\Users\tnayanam\Desktop\Demo\ASP.NetCore\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\EmployeeManagement.dll
+C:\Users\tnayanam\Desktop\Demo\ASP.NetCore\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\EmployeeManagement.pdb

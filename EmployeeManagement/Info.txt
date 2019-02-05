@@ -1,5 +1,17 @@
 ==============
  New Features
 ==============
-1. If we add a file by going to folder of the project, it automatically gets included/excluded from the solution explorer, no need to use
+** If we add a file by going to folder of the project, it automatically gets included/excluded from the solution explorer, no need to use
 "include in project" option.
+===================
+ About CSProj File
+===================
+** Go to csproj file, the targetframework talks about the framework in which we are developing the application.
+** AspNetCoreHostingModel denotes how should we be hosting out application. It can be InProcess and OutOfProcess.
+   InProcess hosts the app inside of the IIS worker process. OutOfProcess hosting means we will forward t=web requests to a backend ASP.Net Core app running the Kestrel server.
+===================
+About Package
+===================
+** Metapackage has no conetent of its own, i ts a bundle of various other packages. example: microsoft.AspNetCore.App
+
+   
