@@ -13,5 +13,14 @@
 About Package
 ===================
 ** Metapackage has no conetent of its own, i ts a bundle of various other packages. example: microsoft.AspNetCore.App
+=================
+InProcessHosting
+=================
+To check if its inproces or outprocess check the csproj file and ASPNETCOREHOSTINGMODEL tag, when its set to inprocess UseIIS will be called and if IIS Express is getting used then iisexpress.exe will kick in if IIS 
+is getting used then w3wp.exe will kick in.
+With InProcess hosting, we have just one server but in out of process hosting we have multiple servers, so firstly request goes to internal server (Kestrel) and then it goes to external web server.
+Kestrel - Cross platform web server for ASp.Net core. Kestrel is provided by default by in ASP.Net core application, but since we run our applcaiiton from Visual Studio, we can see the process as IIS express (which is proveided by VS),
+but if we run the application directly from CLI we will see the output as 'dotnet' (this is the hosting exe provided by kestrel).
+
 
    
