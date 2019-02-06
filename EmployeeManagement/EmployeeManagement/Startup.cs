@@ -19,7 +19,6 @@ namespace EmployeeManagement
             _config = config;
         }
 
-
         // This method gets called by the runtime. Use this method to add services to the container.
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
@@ -36,9 +35,10 @@ namespace EmployeeManagement
                 app.UseDeveloperExceptionPage(); // 1st middleware
             }
 
-            app.Run(async (context) =>
+            app.Use(async (context, next) =>
             {
                 await context.Response.WriteAsync("Hello World from first MW2"); // 2nd middle ware
+                await next();
             });
 
             app.Run(async (context) =>
@@ -50,3 +50,5 @@ namespace EmployeeManagement
 }
 // In this case the output is still "Hello World from first MW2" UI does not display MW3 and reason beind "app.Run" is a terminal middleware,
 // and at Terminal middleware request pipelines start returning and doesnt procees furhter.
+
+// new output: Hello World from firs t MW2Hello World from first MW3//// you can see both the middleware got called.
