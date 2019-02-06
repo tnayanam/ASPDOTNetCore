@@ -35,15 +35,13 @@ namespace EmployeeManagement
                 app.UseDeveloperExceptionPage(); // 1st middleware
             }
 
-            app.Use(async (context, next) =>
-            {
-                await context.Response.WriteAsync("Hello World from first MW2"); // 2nd middle ware
-                await next();
-            });
+            app.UseStaticFiles(); // we need this for statuis file to display 2nd middleware
+
+            // url should be: http://localhost:52160/rf.jpeg
 
             app.Run(async (context) =>
             {
-                await context.Response.WriteAsync("Hello World from first MW3"); // 3rd middleware
+                await context.Response.WriteAsync("Hello World"); // 3rd middeware
             });
         }
     }
