@@ -35,16 +35,12 @@ namespace EmployeeManagement
                 app.UseDeveloperExceptionPage(); // 1st middleware
             }
 
-            DefaultFilesOptions defaultFilesOptions = new DefaultFilesOptions();
-            defaultFilesOptions.DefaultFileNames.Clear();
-            defaultFilesOptions.DefaultFileNames.Add("foo.html");
+            FileServerOptions fileServerOptions = new FileServerOptions();
+            fileServerOptions.DefaultFilesOptions.DefaultFileNames.Clear();
+            fileServerOptions.DefaultFilesOptions.DefaultFileNames.Add("foo.html");
             //app.UseDefaultFiles(defaultFilesOptions); // this must be registered befor ethe static files
             //app.UseStaticFiles(); // we need this for statuis file to display 2nd middleware
-            app.UseFileServer(); // This option does both uses the default file and also uses the static files. but we still see the default.html file, we shold have seen the foo.html file.
-
-
-
-
+            app.UseFileServer(fileServerOptions); // This option does both uses the default file and also uses the static files. but we still see the default.html file, we shold have seen the foo.html file.
 
             // url should be: http://localhost:52160/rf.jpeg
 
@@ -59,3 +55,5 @@ namespace EmployeeManagement
 // and at Terminal middleware request pipelines start returning and doesnt procees furhter.
 
 // new output: Hello World from firs t MW2Hello World from first MW3//// you can see both the middleware got called.
+
+// hello from foo.html this is te output now.
