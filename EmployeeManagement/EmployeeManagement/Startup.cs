@@ -35,17 +35,10 @@ namespace EmployeeManagement
                 app.UseDeveloperExceptionPage(); // 1st middleware
             }
 
-            FileServerOptions fileServerOptions = new FileServerOptions();
-            fileServerOptions.DefaultFilesOptions.DefaultFileNames.Clear();
-            fileServerOptions.DefaultFilesOptions.DefaultFileNames.Add("foo.html");
-            //app.UseDefaultFiles(defaultFilesOptions); // this must be registered befor ethe static files
-            //app.UseStaticFiles(); // we need this for statuis file to display 2nd middleware
-            app.UseFileServer(fileServerOptions); // This option does both uses the default file and also uses the static files. but we still see the default.html file, we shold have seen the foo.html file.
-
-            // url should be: http://localhost:52160/rf.jpeg
-
+            app.UseFileServer(); 
             app.Run(async (context) =>
             {
+                throw new Exception("heoola");
                 await context.Response.WriteAsync("Hello World"); // 3rd middeware
             });
         }
@@ -57,3 +50,6 @@ namespace EmployeeManagement
 // new output: Hello World from firs t MW2Hello World from first MW3//// you can see both the middleware got called.
 
 // hello from foo.html this is te output now.
+
+// reasons to why we are not seeing the exception here in output. Output is still"hello from default.html"
+// reason being UseFileServer is the combination of both default pagr and static page so out request gets served and then reverse proxy starts, so app.run never gets executed.
