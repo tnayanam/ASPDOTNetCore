@@ -16,12 +16,35 @@ About Package
 =================
 InProcessHosting
 =================
-To check if its inproces or outprocess check the csproj file and ASPNETCOREHOSTINGMODEL tag, when its set to inprocess UseIIS will be called and if IIS Express is getting used then iisexpress.exe will kick in if IIS 
+To check if its inproces or outprocess check the csproj file and ASPNETCOREHOSTINGMODEL tag, when its set to inprocess UseIIS will be called 
+and if IIS Express is getting used then iisexpress.exe will kick in if IIS 
 is getting used then w3wp.exe will kick in.
-With InProcess hosting, we have just one server but in out of process hosting we have multiple servers, so firstly request goes to internal server (Kestrel) and then it goes to external web server.
-Kestrel - Cross platform web server for ASp.Net core. Kestrel is provided by default by in ASP.Net core application, but since we run our applcaiiton from Visual Studio, we can see the process as IIS express (which is proveided by VS),
+With InProcess hosting, we have just one server but in out of process hosting we have multiple servers, so firstly request goes to internal server 
+(Kestrel) and then it goes to external web server.
+Kestrel - Cross platform web server for ASp.Net core. Kestrel is provided by default by in ASP.Net core application,
+ but since we run our applcaiiton from Visual Studio, we can see the process as IIS express (which is proveided by VS),
 but if we run the application directly from CLI we will see the output as 'dotnet' (this is the hosting exe provided by kestrel).
-With out of process web hosting we have 2 servers internal as well as external servers. internal server will be Kestreal and external web server will be IIS or apache or Nginx.
-
+With out of process web hosting we have 2 servers internal as well as external servers.
+ internal server will be Kestreal and external web server will be IIS or apache or Nginx.
+ =========================
+ Launchsettings.json file
+ =========================
+ In this we have all the settings for launching environment required whe we are running system locally.
+ We have 2 profiles there, iis express profile is used by "IIS express" which in in Visual studio
+ whereas CLI uses the other profile settings.
+ If we go to VS and try to change the configuration from dropdown to use the 2nd profile, thinking IIS express wil use this profile. it doesnt
+ work that way, when we do this, then Visual Studio opens CLI and then that CLI runs our code. so no matter what we could not run the 2ne profile
+ via IIS Express.
+ 
+ The "commandname" in json file and AspNetCoreHostingModel in csproj file together determines which two server (niternal and external server) will be used.
+ 
+ 
+ commandname   -----    AspNetCoreHostingModel ------ Internal Web server ----  External web server
+ 
+  Project                HostingSettingsIgnored                Just one server  Kestrel
+  IISExpress             InProcess           -------           Just one server   IIS Express
+  IISExpress              OutProcess         --------- Kestrel (dotnet.exe)                      IIS Express (iisexpress.exe)
+  IIS                    OutProcess         ---------- Kestrel                    IIS
+ 
 
 

@@ -3,7 +3,6 @@ C:\Users\tnayanam\Desktop\Demo\ASP.NetCore\EmployeeManagement\EmployeeManagement
 C:\Users\tnayanam\Desktop\Demo\ASP.NetCore\EmployeeManagement\EmployeeManagement\bin\Debug\netcoreapp2.2\EmployeeManagement.runtimeconfig.dev.json
 C:\Users\tnayanam\Desktop\Demo\ASP.NetCore\EmployeeManagement\EmployeeManagement\bin\Debug\netcoreapp2.2\EmployeeManagement.dll
 C:\Users\tnayanam\Desktop\Demo\ASP.NetCore\EmployeeManagement\EmployeeManagement\bin\Debug\netcoreapp2.2\EmployeeManagement.pdb
-C:\Users\tnayanam\Desktop\Demo\ASP.NetCore\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\EmployeeManagement.csprojAssemblyReference.cache
 C:\Users\tnayanam\Desktop\Demo\ASP.NetCore\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\EmployeeManagement.csproj.CoreCompileInputs.cache
 C:\Users\tnayanam\Desktop\Demo\ASP.NetCore\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\EmployeeManagement.RazorAssemblyInfo.cache
 C:\Users\tnayanam\Desktop\Demo\ASP.NetCore\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\EmployeeManagement.RazorAssemblyInfo.cs
