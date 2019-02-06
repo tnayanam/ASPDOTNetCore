@@ -53,3 +53,10 @@ namespace EmployeeManagement
 
 // reasons to why we are not seeing the exception here in output. Output is still"hello from default.html"
 // reason being UseFileServer is the combination of both default pagr and static page so out request gets served and then reverse proxy starts, so app.run never gets executed.
+
+    // FLow for exception here.
+    /* when we try to git localhost:port/ty.html  we start getting exception WHY SO?
+     * so intially request came and then middleware and then usedeveloperexceptionpage got registered, and then when the resource ty.html is not found by "UseFIleServer" middleware it passes to the request to
+     * next middleware which is
+     * throwing the exception. 
+     */
