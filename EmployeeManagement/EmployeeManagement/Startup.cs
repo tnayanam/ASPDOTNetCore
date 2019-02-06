@@ -28,6 +28,12 @@ namespace EmployeeManagement
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
+            app.UseFileServer(); 
+            app.Run(async (context) =>
+            {
+                throw new Exception("heoola");
+                await context.Response.WriteAsync("Hello World"); // 3rd middeware
+            });
             // this is where all the middleware goes.
 
             if (env.IsDevelopment())
@@ -35,12 +41,6 @@ namespace EmployeeManagement
                 app.UseDeveloperExceptionPage(); // 1st middleware
             }
 
-            app.UseFileServer(); 
-            app.Run(async (context) =>
-            {
-                throw new Exception("heoola");
-                await context.Response.WriteAsync("Hello World"); // 3rd middeware
-            });
         }
     }
 }
@@ -58,5 +58,8 @@ namespace EmployeeManagement
     /* when we try to git localhost:port/ty.html  we start getting exception WHY SO?
      * so intially request came and then middleware and then usedeveloperexceptionpage got registered, and then when the resource ty.html is not found by "UseFIleServer" middleware it passes to the request to
      * next middleware which is
-     * throwing the exception. 
+     * throwing the exception.
+     *
+     * Now with above code change when resource is not found and exceotions is thrown we do not see the developer excption page becasue it is not registered yet. so we should always try to register the exception page as soona s
+     * possible in configure method.
      */
