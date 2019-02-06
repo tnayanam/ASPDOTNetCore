@@ -35,9 +35,15 @@ namespace EmployeeManagement
                 app.UseDeveloperExceptionPage(); // 1st middleware
             }
 
-            app.UseDefaultFiles(); // this must be registered befor ethe static files 
-            app.UseStaticFiles(); // we need this for statuis file to display 2nd middleware
-            // going to http://localhost:52160 will open default.html file
+            DefaultFilesOptions defaultFilesOptions = new DefaultFilesOptions();
+            defaultFilesOptions.DefaultFileNames.Clear();
+            defaultFilesOptions.DefaultFileNames.Add("foo.html");
+            //app.UseDefaultFiles(defaultFilesOptions); // this must be registered befor ethe static files
+            //app.UseStaticFiles(); // we need this for statuis file to display 2nd middleware
+            app.UseFileServer(); // This option does both uses the default file and also uses the static files. but we still see the default.html file, we shold have seen the foo.html file.
+
+
+
 
 
             // url should be: http://localhost:52160/rf.jpeg
