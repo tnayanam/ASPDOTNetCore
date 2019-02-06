@@ -28,18 +28,22 @@ namespace EmployeeManagement
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
+            // this is where all the middleware goes.
+            if (env.IsDevelopment())
+            {
+                DeveloperExceptionPageOptions developerExceptionPageOptions = new DeveloperExceptionPageOptions
+                {
+                    SourceCodeLineCount = 2
+                };
+                app.UseDeveloperExceptionPage(developerExceptionPageOptions); // 1st middleware
+            }
             app.UseFileServer(); 
             app.Run(async (context) =>
             {
                 throw new Exception("heoola");
                 await context.Response.WriteAsync("Hello World"); // 3rd middeware
             });
-            // this is where all the middleware goes.
 
-            if (env.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage(); // 1st middleware
-            }
 
         }
     }
@@ -54,12 +58,13 @@ namespace EmployeeManagement
 // reasons to why we are not seeing the exception here in output. Output is still"hello from default.html"
 // reason being UseFileServer is the combination of both default pagr and static page so out request gets served and then reverse proxy starts, so app.run never gets executed.
 
-    // FLow for exception here.
-    /* when we try to git localhost:port/ty.html  we start getting exception WHY SO?
-     * so intially request came and then middleware and then usedeveloperexceptionpage got registered, and then when the resource ty.html is not found by "UseFIleServer" middleware it passes to the request to
-     * next middleware which is
-     * throwing the exception.
-     *
-     * Now with above code change when resource is not found and exceotions is thrown we do not see the developer excption page becasue it is not registered yet. so we should always try to register the exception page as soona s
-     * possible in configure method.
-     */
+// FLow for exception here.
+/* when we try to git localhost:port/ty.html  we start getting exception WHY SO?
+ * so intially request came and then middleware and then usedeveloperexceptionpage got registered, and then when the resource ty.html is not found by "UseFIleServer" middleware it passes to the request to
+ * next middleware which is
+ * throwing the exception.
+ *
+ * Now with above code change when resource is not found and exceotions is thrown we do not see the developer excption page becasue it is not registered yet. so we should always try to register the exceot
+ *
+ * with this set up when we visit some unknown url as "http://localhost:52160/io.html then in developer exception pafe that gets opened we see 2 lines of code above and beneath the actual excetion line.
+ */
