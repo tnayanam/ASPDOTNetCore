@@ -35,7 +35,10 @@ namespace EmployeeManagement
                 app.UseDeveloperExceptionPage(); // 1st middleware
             }
 
+            app.UseDefaultFiles(); // this must be registered befor ethe static files 
             app.UseStaticFiles(); // we need this for statuis file to display 2nd middleware
+            // going to http://localhost:52160 will open default.html file
+
 
             // url should be: http://localhost:52160/rf.jpeg
 
