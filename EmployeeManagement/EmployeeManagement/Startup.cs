@@ -28,20 +28,15 @@ namespace EmployeeManagement
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
-            // this is where all the middleware goes.
-            if (env.IsDevelopment())
+            if (env.IsEnvironment("UAT")) // this will return false as in launch settings.json we have set it up as "Development"
             {
-                DeveloperExceptionPageOptions developerExceptionPageOptions = new DeveloperExceptionPageOptions
-                {
-                    SourceCodeLineCount = 2
-                };
-                app.UseDeveloperExceptionPage(developerExceptionPageOptions); // 1st middleware
+                app.UseDeveloperExceptionPage();
             }
-            app.UseFileServer(); 
+
+            app.UseStaticFiles();
             app.Run(async (context) =>
             {
-                throw new Exception("heoola");
-                await context.Response.WriteAsync("Hello World"); // 3rd middeware
+                await context.Response.WriteAsync($"Hosting Environment: {env.EnvironmentName}"); 
             });
 
 
@@ -67,4 +62,6 @@ namespace EmployeeManagement
  * Now with above code change when resource is not found and exceotions is thrown we do not see the developer excption page becasue it is not registered yet. so we should always try to register the exceot
  *
  * with this set up when we visit some unknown url as "http://localhost:52160/io.html then in developer exception pafe that gets opened we see 2 lines of code above and beneath the actual excetion line.
+ *
+ *
  */
