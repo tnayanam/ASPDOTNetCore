@@ -12,7 +12,10 @@
       "commandName": "IISExpress",
       "launchBrowser": true,
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "MyKey": "This value is coming from Environment variable file" // this will be the ouput now, because it will override others as it comes under "ENvironment Variable"
+        // which has higher priority
+
       }
     },
     "EmployeeManagement": {

@@ -38,13 +38,25 @@ With out of process web hosting we have 2 servers internal as well as external s
  
  The "commandname" in json file and AspNetCoreHostingModel in csproj file together determines which two server (niternal and external server) will be used.
  
- 
  commandname   -----    AspNetCoreHostingModel ------ Internal Web server ----  External web server
  
   Project                HostingSettingsIgnored                Just one server  Kestrel
   IISExpress             InProcess           -------           Just one server   IIS Express
   IISExpress              OutProcess         --------- Kestrel (dotnet.exe)                      IIS Express (iisexpress.exe)
   IIS                    OutProcess         ---------- Kestrel                    IIS
+  
+======================
+appsettings.json file
+======================
+How various configurations sources are prioritized.
+1. appsettings.json
+2. appsettings.{environment}.json
+3. User Secrets
+4. Environment Variables
+5. Command-Line Arguments
+
+
+5 > 4 > 3 > 2 > 1 (Priotiry Order).
  
 
 
