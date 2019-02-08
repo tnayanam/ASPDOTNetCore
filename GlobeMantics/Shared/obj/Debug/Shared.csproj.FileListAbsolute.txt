@@ -1,0 +1,6 @@
+C:\Users\tnayanam\Desktop\Demo\ASP.NetCore\GlobeMantics\Shared\bin\Debug\Shared.dll
+C:\Users\tnayanam\Desktop\Demo\ASP.NetCore\GlobeMantics\Shared\bin\Debug\Shared.pdb
+C:\Users\tnayanam\Desktop\Demo\ASP.NetCore\GlobeMantics\Shared\obj\Debug\Shared.csprojAssemblyReference.cache
+C:\Users\tnayanam\Desktop\Demo\ASP.NetCore\GlobeMantics\Shared\obj\Debug\Shared.csproj.CoreCompileInputs.cache
+C:\Users\tnayanam\Desktop\Demo\ASP.NetCore\GlobeMantics\Shared\obj\Debug\Shared.dll
+C:\Users\tnayanam\Desktop\Demo\ASP.NetCore\GlobeMantics\Shared\obj\Debug\Shared.pdb

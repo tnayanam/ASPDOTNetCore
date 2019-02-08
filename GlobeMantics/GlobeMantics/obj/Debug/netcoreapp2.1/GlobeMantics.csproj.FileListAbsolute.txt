@@ -1,0 +1,14 @@
+C:\Users\tnayanam\Desktop\Demo\ASP.NetCore\GlobeMantics\GlobeMantics\bin\Debug\netcoreapp2.1\GlobeMantics.deps.json
+C:\Users\tnayanam\Desktop\Demo\ASP.NetCore\GlobeMantics\GlobeMantics\bin\Debug\netcoreapp2.1\GlobeMantics.runtimeconfig.json
+C:\Users\tnayanam\Desktop\Demo\ASP.NetCore\GlobeMantics\GlobeMantics\bin\Debug\netcoreapp2.1\GlobeMantics.runtimeconfig.dev.json
+C:\Users\tnayanam\Desktop\Demo\ASP.NetCore\GlobeMantics\GlobeMantics\bin\Debug\netcoreapp2.1\GlobeMantics.dll
+C:\Users\tnayanam\Desktop\Demo\ASP.NetCore\GlobeMantics\GlobeMantics\bin\Debug\netcoreapp2.1\GlobeMantics.pdb
+C:\Users\tnayanam\Desktop\Demo\ASP.NetCore\GlobeMantics\GlobeMantics\obj\Debug\netcoreapp2.1\GlobeMantics.csprojAssemblyReference.cache
+C:\Users\tnayanam\Desktop\Demo\ASP.NetCore\GlobeMantics\GlobeMantics\obj\Debug\netcoreapp2.1\GlobeMantics.csproj.CoreCompileInputs.cache
+C:\Users\tnayanam\Desktop\Demo\ASP.NetCore\GlobeMantics\GlobeMantics\obj\Debug\netcoreapp2.1\GlobeMantics.RazorAssemblyInfo.cache
+C:\Users\tnayanam\Desktop\Demo\ASP.NetCore\GlobeMantics\GlobeMantics\obj\Debug\netcoreapp2.1\GlobeMantics.RazorAssemblyInfo.cs
+C:\Users\tnayanam\Desktop\Demo\ASP.NetCore\GlobeMantics\GlobeMantics\obj\Debug\netcoreapp2.1\GlobeMantics.AssemblyInfoInputs.cache
+C:\Users\tnayanam\Desktop\Demo\ASP.NetCore\GlobeMantics\GlobeMantics\obj\Debug\netcoreapp2.1\GlobeMantics.AssemblyInfo.cs
+C:\Users\tnayanam\Desktop\Demo\ASP.NetCore\GlobeMantics\GlobeMantics\obj\Debug\netcoreapp2.1\GlobeMantics.RazorTargetAssemblyInfo.cache
+C:\Users\tnayanam\Desktop\Demo\ASP.NetCore\GlobeMantics\GlobeMantics\obj\Debug\netcoreapp2.1\GlobeMantics.dll
+C:\Users\tnayanam\Desktop\Demo\ASP.NetCore\GlobeMantics\GlobeMantics\obj\Debug\netcoreapp2.1\GlobeMantics.pdb
