@@ -57,6 +57,10 @@ How various configurations sources are prioritized.
 
 
 5 > 4 > 3 > 2 > 1 (Priotiry Order).
+===========
+Middleware
+===========
+
  
 
 
