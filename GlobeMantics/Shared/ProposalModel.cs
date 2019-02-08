@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Shared
 {
-    class ProposalModel
+    public class ProposalModel
     {
         public int Id { get; set; }
         public int ConferenceId { get; set; }
