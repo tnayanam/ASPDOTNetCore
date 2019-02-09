@@ -12,3 +12,6 @@ C:\Users\tnayanam\Desktop\Demo\ASP.NetCore\GlobeMantics\GlobeMantics\obj\Debug\n
 C:\Users\tnayanam\Desktop\Demo\ASP.NetCore\GlobeMantics\GlobeMantics\obj\Debug\netcoreapp2.1\GlobeMantics.RazorTargetAssemblyInfo.cache
 C:\Users\tnayanam\Desktop\Demo\ASP.NetCore\GlobeMantics\GlobeMantics\obj\Debug\netcoreapp2.1\GlobeMantics.dll
 C:\Users\tnayanam\Desktop\Demo\ASP.NetCore\GlobeMantics\GlobeMantics\obj\Debug\netcoreapp2.1\GlobeMantics.pdb
+C:\Users\tnayanam\Desktop\Demo\ASP.NetCore\GlobeMantics\GlobeMantics\bin\Debug\netcoreapp2.1\Shared.dll
+C:\Users\tnayanam\Desktop\Demo\ASP.NetCore\GlobeMantics\GlobeMantics\bin\Debug\netcoreapp2.1\Shared.pdb
+C:\Users\tnayanam\Desktop\Demo\ASP.NetCore\GlobeMantics\GlobeMantics\obj\Debug\netcoreapp2.1\GlobeMantics.csproj.CopyComplete

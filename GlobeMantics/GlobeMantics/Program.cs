@@ -22,3 +22,9 @@ namespace GlobeMantics
                 .UseStartup<Startup>();
     }
 }
+
+
+// Ok so I wanted to add bootstrap and all, for that just right clik on the solution and add npm configuration
+// file, and then type the bootstrap thing as seen in packae.json file. the bootstrap gets installed as soon as you save
+// the file, also when you see the hidden files from solution explorer you cn see a folder called node_modules
+// where you can see bootstarp files, just copy the file syou need a paste it in the wwwroot folder.
