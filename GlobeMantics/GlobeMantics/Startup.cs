@@ -18,6 +18,7 @@ namespace GlobeMantics
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddMvc();
             services.AddSingleton<IConferenceService, ConferenceMemoryService>(); // Dependency Injection
             services.AddSingleton<IProposalService, ProposalMemoryService>(); // Dependency Injection
         }
@@ -29,18 +30,14 @@ namespace GlobeMantics
             {
                 app.UseDeveloperExceptionPage();
             }
-            app.Use(async (context, next) =>
-            {
-                logger.LogInformation("Before Second");
-                await next();
-                logger.LogInformation("After Second");
-            });
-            app.Run(async (context) =>
-            {
-                logger.LogInformation("Second");
-                await context.Response.WriteAsync("Hello World!");
-                logger.LogInformation("Second");
-            });
+
+            app.UseMvc(routes =>
+                {
+                    routes.MapRoute(
+                        name: "default",
+                        template: "{controller=Conference}/{action=Index}/{id?}"
+                    );
+                });
         }
     }
 }
