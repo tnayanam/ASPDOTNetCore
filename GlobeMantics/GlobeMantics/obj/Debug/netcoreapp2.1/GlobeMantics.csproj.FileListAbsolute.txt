@@ -15,3 +15,14 @@ C:\Users\tnayanam\Desktop\Demo\ASP.NetCore\GlobeMantics\GlobeMantics\obj\Debug\n
 C:\Users\tnayanam\Desktop\Demo\ASP.NetCore\GlobeMantics\GlobeMantics\bin\Debug\netcoreapp2.1\Shared.dll
 C:\Users\tnayanam\Desktop\Demo\ASP.NetCore\GlobeMantics\GlobeMantics\bin\Debug\netcoreapp2.1\Shared.pdb
 C:\Users\tnayanam\Desktop\Demo\ASP.NetCore\GlobeMantics\GlobeMantics\obj\Debug\netcoreapp2.1\GlobeMantics.csproj.CopyComplete
+C:\Users\tnayanam\Desktop\Demo\ASP.NetCore\GlobeMantics\GlobeMantics\bin\Debug\netcoreapp2.1\GlobeMantics.Views.dll
+C:\Users\tnayanam\Desktop\Demo\ASP.NetCore\GlobeMantics\GlobeMantics\bin\Debug\netcoreapp2.1\GlobeMantics.Views.pdb
+C:\Users\tnayanam\Desktop\Demo\ASP.NetCore\GlobeMantics\GlobeMantics\obj\Debug\netcoreapp2.1\GlobeMantics.TagHelpers.input.cache
+C:\Users\tnayanam\Desktop\Demo\ASP.NetCore\GlobeMantics\GlobeMantics\obj\Debug\netcoreapp2.1\GlobeMantics.TagHelpers.output.cache
+C:\Users\tnayanam\Desktop\Demo\ASP.NetCore\GlobeMantics\GlobeMantics\obj\Debug\netcoreapp2.1\GlobeMantics.RazorCoreGenerate.cache
+C:\Users\tnayanam\Desktop\Demo\ASP.NetCore\GlobeMantics\GlobeMantics\obj\Debug\netcoreapp2.1\Razor\Views\Conference\Index.g.cshtml.cs
+C:\Users\tnayanam\Desktop\Demo\ASP.NetCore\GlobeMantics\GlobeMantics\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
+C:\Users\tnayanam\Desktop\Demo\ASP.NetCore\GlobeMantics\GlobeMantics\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
+C:\Users\tnayanam\Desktop\Demo\ASP.NetCore\GlobeMantics\GlobeMantics\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
+C:\Users\tnayanam\Desktop\Demo\ASP.NetCore\GlobeMantics\GlobeMantics\obj\Debug\netcoreapp2.1\GlobeMantics.RazorTargetAssemblyInfo.cs
+C:\Users\tnayanam\Desktop\Demo\ASP.NetCore\GlobeMantics\GlobeMantics\obj\Debug\netcoreapp2.1\GlobeMantics.Views.pdb

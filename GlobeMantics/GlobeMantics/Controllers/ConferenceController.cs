@@ -19,6 +19,8 @@ namespace GlobeMantics.Controllers
 
         public async Task<IActionResult> Index()
         {
+
+            ViewBag.Title = "Conference";
             return View(await service.GetAll());
         }
 
