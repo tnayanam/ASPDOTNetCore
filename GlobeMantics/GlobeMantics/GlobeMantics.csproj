@@ -5,6 +5,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="wwwroot\fonts\**" />
+    <Content Remove="wwwroot\fonts\**" />
+    <EmbeddedResource Remove="wwwroot\fonts\**" />
+    <None Remove="wwwroot\fonts\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="BuildBundlerMinifier" Version="2.8.391" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />

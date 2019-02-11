@@ -26,3 +26,8 @@ C:\Users\tnayanam\Desktop\Demo\ASP.NetCore\GlobeMantics\GlobeMantics\obj\Debug\n
 C:\Users\tnayanam\Desktop\Demo\ASP.NetCore\GlobeMantics\GlobeMantics\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
 C:\Users\tnayanam\Desktop\Demo\ASP.NetCore\GlobeMantics\GlobeMantics\obj\Debug\netcoreapp2.1\GlobeMantics.RazorTargetAssemblyInfo.cs
 C:\Users\tnayanam\Desktop\Demo\ASP.NetCore\GlobeMantics\GlobeMantics\obj\Debug\netcoreapp2.1\GlobeMantics.Views.pdb
+C:\Users\tnayanam\Desktop\Demo\ASP.NetCore\GlobeMantics\GlobeMantics\obj\Debug\netcoreapp2.1\Razor\Views\Conference\DisplayTemplates\ConferenceModel.g.cshtml.cs
+C:\Users\tnayanam\Desktop\Demo\ASP.NetCore\GlobeMantics\GlobeMantics\obj\Debug\netcoreapp2.1\Razor\Views\Proposal\Index.g.cshtml.cs
+C:\Users\tnayanam\Desktop\Demo\ASP.NetCore\GlobeMantics\GlobeMantics\obj\Debug\netcoreapp2.1\Razor\Views\Proposal\DisplayTemplates\ProposalModel.g.cshtml.cs
+C:\Users\tnayanam\Desktop\Demo\ASP.NetCore\GlobeMantics\GlobeMantics\obj\Debug\netcoreapp2.1\Razor\Views\Conference\Add.g.cshtml.cs
+C:\Users\tnayanam\Desktop\Demo\ASP.NetCore\GlobeMantics\GlobeMantics\obj\Debug\netcoreapp2.1\Razor\Views\Proposal\Add.g.cshtml.cs
